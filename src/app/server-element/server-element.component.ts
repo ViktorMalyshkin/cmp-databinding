@@ -6,10 +6,9 @@ import { Component, Input, OnInit } from '@angular/core'
   styleUrls: ['./server-element.component.css'],
 })
 export class ServerElementComponent implements OnInit {
-  @Input() element: { name: string, type: string, content: string };
+  @Input('srvElement') element: { name: string, type: string, content: string };
 
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit(): void {
   }
